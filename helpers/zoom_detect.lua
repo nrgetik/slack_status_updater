@@ -12,11 +12,11 @@
 --      local zoom_detect = require("zoom_detect")
 
 -- Configuration
-check_interval=20 -- How often to check if you're in zoom, in seconds
+check_interval=5 -- How often to check if you're in zoom, in seconds
 
 -- Initialization
 inzoom = nil
-local lightbox = require("lightbox")
+-- local lightbox = require("lightbox")
 local logger = hs.logger.new("zoomdetect")
 
 function update_status(status)
@@ -27,14 +27,14 @@ function on_air()
     inzoom = true
     hs.notify.show("Started zoom meeting", "Updating slack status", "")
     update_status("zoom")
-    lightbox.on()
+    -- lightbox.on()
 end
 
 function off_air()
     inzoom = false
     hs.notify.show("Left zoom meeting", "Updating slack status", "")
     update_status("none")
-    lightbox.off()
+    -- lightbox.off()
 end
 
 function isInMeeting()
