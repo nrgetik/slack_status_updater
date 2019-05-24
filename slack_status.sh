@@ -27,7 +27,10 @@ PRESET_EMOJI_test=":check:"
 PRESET_TEXT_test="Testing status updater"
 
 PRESET_EMOJI_zoom=":zoom:"
-PRESET_TEXT_zoom="In a zoom meeting"
+PRESET_TEXT_zoom="In a Zoom meeting"
+
+PRESET_EMOJI_bluejeans=":zoom:"
+PRESET_TEXT_bluejeans="In a BlueJeans meeting"
 EOF
     echo
     echo "A default configuration has been created at ${green}$CONFIG_FILE.${reset}"
