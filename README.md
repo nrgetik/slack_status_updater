@@ -55,6 +55,9 @@ To install it:
 * Symlink the `videoconference_detect.lua`, `bluejeans.lua`, and `zoom.lua` files to
 `~/.hammerspoon/`
 * Add the following lines to `~/.hammerspoon/init.lua`:
-```local videoconference_detect = require("videoconference_detect")
+
+```
+local videoconference_detect = require("videoconference_detect")
 local bluejeans = require("bluejeans")
-local zoom = require("zoom")```
+local zoom = require("zoom")
+```
