@@ -9,7 +9,7 @@ Copy `slack_status.sh` to somewhere in your path.
 
 ## Setup
 
-First, you need to get an api token. Go to
+First, you need to get an API token. Go to
 <https://api.Slack.com/custom-integrations/legacy-tokens> and grab the token
 for your workspace. If you don't already have a token for your workspace, click the
 'Request token' button next to the workspace to get a token.
@@ -17,7 +17,7 @@ for your workspace. If you don't already have a token for your workspace, click 
 Once you have the token, run `slack_status.sh setup` and follow the prompts.
 This will create a configuration file for you.
 
-If you wish, edit the config file to add additional presets.
+If you wish, edit the configuration file to add additional presets.
 
 ## Usage
 
@@ -51,10 +51,10 @@ To install it:
 
 * Install and set up the `slack_status.sh` script (make sure it's in your path)
 * Ensure there is a `videoconference` preset (one is created by default during setup)
-* Install Hammerspoon (brew cask install hammerspoon) if you don't have it already.
+* Install Hammerspoon (`brew cask install hammerspoon`) if you don't have it already.
 * Symlink the `videoconference_detect.lua`, `bluejeans.lua`, and `zoom.lua` files to
-~/.hammerspoon/
-* Add the following lines to ~/.hammerspoon/init.lua:
-  `local videoconference_detect = require("videoconference_detect")`
-  `local bluejeans = require("bluejeans")`
-  `local zoom = require("zoom")`
+`~/.hammerspoon/`
+* Add the following lines to `~/.hammerspoon/init.lua`:
+```local videoconference_detect = require("videoconference_detect")
+local bluejeans = require("bluejeans")
+local zoom = require("zoom")```
